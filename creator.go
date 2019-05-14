@@ -429,7 +429,7 @@ func (c *Creator) generateThriftHTTPComponent() {
 		c.c.ServiceRootPathAbsolute()+"/thriftapi/component/components.go",
 		struct {
 			ServiceName string
-			PkgPath      string
+			PkgPath     string
 		}{c.c.GrpcServiceNames()[0], c.PkgPath},
 		`package component
 
